@@ -14,6 +14,15 @@
         
     </head>
     <body class="antialiased">
-        <h1>Hello World!</h1>
+    <header>
+        <nav>
+            <ul>
+                @foreach ($data as $item)
+                    <li>{{$item}}</li>
+                @endforeach
+            </ul>
+        </nav>
+    </header>
+    <h1>Hello World!</h1>
     </body>
 </html>
